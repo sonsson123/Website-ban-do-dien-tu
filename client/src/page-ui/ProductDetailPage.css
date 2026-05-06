@@ -1,0 +1,257 @@
+.product-page {
+  background-color: #ffffff;
+  padding: 50px 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* --------------------------- SẢN PHẨM --------------------------- */
+.product-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin-bottom: 60px;
+}
+
+/* Ảnh sản phẩm */
+.product-left {
+  flex: 1;
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 102, 255, 0.1);
+}
+
+.thumbnail-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.thumbnail.active {
+  border-color: #007bff;
+}
+
+/* Thông tin sản phẩm */
+.product-right {
+  flex: 1.2;
+  color: #1a1a1a;
+}
+
+.product-name {
+  font-size: 28px;
+  color: #0066ff;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 24px;
+  color: #070b0f;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Nút hành động */
+.product-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #0056d1;
+}
+
+.cart-btn {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-btn:hover {
+  background-color: #e8f0ff;
+}
+
+/* Mô tả */
+.product-desc {
+  background-color: #f8faff;
+  border: 1px solid #cce0ff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.product-desc h3 {
+  color: #0066ff;
+  margin-bottom: 10px;
+}
+
+.product-desc p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --------------------------- TỔNG RATING --------------------------- */
+.rating-summary {
+  background-color: #f8faff;
+  border: 1px solid #cce0ff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 102, 255, 0.05);
+  max-width: 400px;
+  margin-top: 50px;
+}
+
+.rating-summary h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0066ff;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rating-row .bar {
+  flex: 1;
+  height: 10px;
+  background-color: #e0ebff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.rating-row .fill {
+  height: 100%;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+/* --------------------------- ĐÁNH GIÁ --------------------------- */
+.review-section {
+  max-width: 900px;
+  width: 100%;
+  background-color: #f9fbff;
+  border: 1px solid #d6e4ff;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.review-section h3 {
+  color: #0066ff;
+  margin-bottom: 20px;
+}
+
+/* Form đánh giá */
+.review-form {
+  margin-bottom: 30px;
+}
+
+.stars {
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.star.active,
+.star:hover {
+  color: #ffcc00;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #cce0ff;
+  border-radius: 8px;
+  padding: 10px;
+  resize: none;
+  font-size: 15px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit-btn:hover {
+  background-color: #0056d1;
+}
+
+/* Danh sách đánh giá */
+.review-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0eaff;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.review-stars {
+  color: #ffcc00;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.review-date {
+  color: #888;
+  font-size: 14px;
+}

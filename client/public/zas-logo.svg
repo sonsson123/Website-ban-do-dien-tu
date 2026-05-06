@@ -1,0 +1,68 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="gradBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#0099ff;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="gradText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff" />
+      <stop offset="100%" style="stop-color:#0099ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer circle border -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+  <circle cx="100" cy="100" r="90" fill="url(#gradBg)"/>
+  
+  <!-- Tech circuit lines -->
+  <g stroke="#0099ff" stroke-width="1.5" opacity="0.6">
+    <!-- Top left circuit -->
+    <line x1="40" y1="50" x2="60" y2="50"/>
+    <circle cx="65" cy="50" r="3" fill="#00d4ff"/>
+    <line x1="65" y1="50" x2="65" y2="70"/>
+    
+    <!-- Top right circuit -->
+    <line x1="140" y1="50" x2="160" y2="50"/>
+    <circle cx="135" cy="50" r="3" fill="#00d4ff"/>
+    <line x1="135" y1="50" x2="135" y2="70"/>
+    
+    <!-- Bottom circuits -->
+    <line x1="50" y1="150" x2="70" y2="150"/>
+    <circle cx="75" cy="150" r="3" fill="#00d4ff"/>
+    <line x1="130" y1="150" x2="150" y2="150"/>
+    <circle cx="125" cy="150" r="3" fill="#00d4ff"/>
+  </g>
+  
+  <!-- Center ZAS Logo -->
+  <g>
+    <!-- Letter Z -->
+    <path d="M 70 85 L 95 85 L 70 115 L 95 115" fill="none" stroke="url(#gradText)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Letter A -->
+    <path d="M 105 115 L 115 85 L 125 115 M 110 100 L 120 100" fill="none" stroke="url(#gradText)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Letter S -->
+    <path d="M 135 85 Q 135 88 138 90 Q 140 92 138 94 Q 135 96 138 98 Q 140 100 138 102 Q 135 104 138 107 Q 140 110 135 110" fill="none" stroke="url(#gradText)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Tech nodes in corners -->
+  <g fill="#00d4ff" opacity="0.7">
+    <circle cx="30" cy="30" r="2"/>
+    <circle cx="170" cy="30" r="2"/>
+    <circle cx="30" cy="170" r="2"/>
+    <circle cx="170" cy="170" r="2"/>
+  </g>
+  
+  <!-- Glow effect -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.3" filter="url(#glow)"/>
+</svg>
